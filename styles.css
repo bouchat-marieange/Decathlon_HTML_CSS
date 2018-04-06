@@ -1,0 +1,922 @@
+/*------------------------------POLICES PERSONNALISEES-----------------------------------*/
+
+@font-face /*déclaration polices personnalisées - Chivo - regular*/
+{
+    font-family: 'chivoregular';
+    src: url('fonts/chivo-regular-webfont.eot');
+    src: url('fonts/chivo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/chivo-regular-webfont.woff2') format('woff2'),
+         url('fonts/chivo-regular-webfont.woff') format('woff'),
+         url('fonts/chivo-regular-webfont.ttf') format('truetype'),
+         url('fonts/chivo-regular-webfont.svg#chivoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face /*déclaration polices personnalisées - Chivo italic*/
+{
+    font-family: 'chivoitalic';
+    src: url('fonts/chivo-italic-webfont.eot');
+    src: url('fonts/chivo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/chivo-italic-webfont.woff2') format('woff2'),
+         url('fonts/chivo-italic-webfont.woff') format('woff'),
+         url('fonts/chivo-italic-webfont.ttf') format('truetype'),
+         url('fonts/chivo-italic-webfont.svg#chivoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face /*déclaration polices personnalisées - Roboto Regular*/
+{
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.eot');
+    src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face /*déclaration polices personnalisées - Roboto bold*/
+{
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.eot');
+    src: url('fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face /*déclaratin polices personnalisées - Roboto Condensed Regular*/
+{
+    font-family: 'roboto_condensedregular';
+    src: url('fonts/RobotoCondensed-Regular-webfont.eot');
+    src: url('fonts/RobotoCondensed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoCondensed-Regular-webfont.woff') format('woff'),
+         url('fonts/RobotoCondensed-Regular-webfont.ttf') format('truetype'),
+         url('fonts/RobotoCondensed-Regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face /*déclaration polices personnalisées - Roboto Condensed Bold*/
+{
+    font-family: 'roboto_condensedbold';
+    src: url('fonts/robotocondensed-bold-webfont.eot');
+    src: url('fonts/robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/robotocondensed-bold-webfont.woff2') format('woff2'),
+         url('fonts/robotocondensed-bold-webfont.woff') format('woff'),
+         url('fonts/robotocondensed-bold-webfont.ttf') format('truetype'),
+         url('fonts/robotocondensed-bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face /*déclaration polices personnalisées - Roboto Condensed Bold Italic*/
+{
+    font-family: 'roboto_condensedbold_italic';
+    src: url('fonts/RobotoCondensed-BoldItalic-webfont.eot');
+    src: url('fonts/RobotoCondensed-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoCondensed-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/RobotoCondensed-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------------------------------------CONTAINER - GENERAL-----------------------------*/
+
+#container /*Reprend la totalité de la page*/
+{
+  	margin:0;
+  	padding:0;
+  	background: url("images/photo_fond.jpg") no-repeat center fixed;
+  	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*-----------------------------------------HEADER-----------------------------------*/
+
+	header /*Reprend Logo decathlon discovery + liens facebook et instagram*/
+	{
+		margin-top: 20px;
+		margin-bottom: 150px;
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+		.facebook /*icone lien vers facebook decathlon*/
+		{
+			margin-right: 10px; /*ajustement espacement entre icone facebook et icone instragram*/
+		}
+
+
+/*-----------------------------------------CONTENT-----------------------------------*/
+
+
+	#content /*Bloc blanc contenant tout le descriptif le contenu de la page hors background et header*/
+	{
+		background: #ffffff;
+		width:70%;
+		position: relative; /*nécessaire au positionnement en retrait négatif du bloc orange nom produit*/
+	}
+
+		h2 /*par défault : tous les titres niveau h2 de la page*/
+		{
+			font-family: 'chivoregular', Arial, Verdana, sans-serif;
+			font-size: 1.8em;
+			text-align: left;
+			color: #0082c4;
+		}
+
+
+		h3
+		{
+			font-family: 'chivoitalic', Arial, Verdana, sans-serif;
+			font-size: 1.2em;
+			text-align: left;
+			color: #0082c4;
+		}
+
+		p /*par défault : tous les paragraphes de la page*/
+		{
+			font-family: 'robotoregular', Arial, Verdana, sans-serif;
+			font-size: 1em;
+			text-align: justify;
+		}
+
+		strong /*par défault : tous les passages importants mis en évidence de la page*/
+		{
+			font-family: 'robotobold', "Arial Black", "Arial Bold", verdana, sans-serif ;
+		}
+
+		a
+		{
+			color: #ea690a;
+		}
+
+
+/*-----------------------------------------PRODUIT-----------------------------------*/
+
+
+		#nom_produit /*Encadré orange en retrait*/
+		{
+
+			position:absolute;/*nécessaire au positionnement en retrait négatif du bloc orange nom produit - le container doit être en positionnement relatif*/
+			text-align: center;
+			top: 25px;
+			left: -30px;
+			width: 85%; /*largeur bloc nom du produit*/
+			background-color: rgba(234, 105, 10, 0.8) ;
+		}
+
+			#nom_produit h1 /*Nom produit dans encadré orange*/
+			{
+				font-size: 1.5em; /*Taille du nom du produit*/
+				color: #000000;
+				font-family: 'roboto_condensedbold_italic', "Arial Black", "Arial Bold", Arial,Verdana, sans-serif;
+				text-transform: uppercase; /*Mise en capitale de tout les caractères du titre H1 - Nom du produit*/
+				padding: 10px 40px 5px 40px;
+				margin: 0px;
+				color:#2b2b2b;
+			}
+
+
+		#presentation /*Partie comprenant la photo du produit, prix, avis logo btwin et Lifetime warranty*/
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+			#photo_produit img
+			{
+
+				margin-top: 100px;
+				max-width: 100%;
+				height: auto;
+			}
+
+		#texte_intro
+		{
+			width: 80%;
+			margin-bottom: 30px;
+		}
+
+		#texte_intro h2
+		{
+			margin-top:0px;
+		}
+
+		#video_presentation
+		{
+			border: 1px solid #f0f0f0;
+			margin-bottom: 20px;
+		}
+
+
+/*-----------------------------------------EQUIPEMENT-----------------------------------*/
+
+		#equipements
+		{
+			position:relative;
+			width: 80%;
+			padding-left: 10%;
+			padding-right:10%;
+		}
+
+
+			#equipements h3 /*Alignement à gauche pour les h2 de la section équipement*/
+			{
+				margin-top: 0px; /*supprime la marge supérieur des h3 dans équipement pour aligné verticalement image et texte*/
+			}
+
+/*-----------------------------------EQUIPEMENT GAUCHE-----------------------------------*/
+
+			#equipement_gauche
+			{
+				display: flex;
+				flex-direction: column; /*place les différent équipements les uns au dessus des autres (en colonne - axe principal)*/
+				align-items: flex-start; /*aligne chaque élément sur la gauche (au début du bloc - par défaut) selon l'axe secondaire (horizontal)*/
+			}
+
+			#equipement_gauche h3
+			{
+				text-align: left;
+				margin-bottom:0px;/*supprimer marge inférieur pour rapprocher titre et paragraphe*/
+			}
+
+			#equipement_gauche p
+			{
+				margin-top: 10px; /*diminuer marge supérieur pour rapprocher titre et paragraphe*/
+			}
+
+
+			#equipement_gauche img /*s'applique à toutes les image de la section équipement_gauche*/
+			{
+				border-radius: 100%; /*rend l'image carré ronde grace à un border radius maximum*/
+				border: 3px solid #0082c4; /*ajoute une bordure de 3px en bleu decathlon sur les images détails équipement*/
+				margin-right: 25px; /*ajoute espace à droite entre l'image et le texte*/
+			}
+
+
+				#cadre /*section dédié au cadre vélo*/
+				{
+					display: flex;
+					flex-direction: row; /*place l'un à coté de l'autre image et bloc texte (h3 + paragraphe)*/
+					width: 85%; /*la totalité du bloc image + texte occupe 75% de la largeur de la zone de contenu*/
+					margin-bottom: 30px; /*ajout d'une marge inférieur pour bien séparé les différents équipements*/
+				}
+
+
+				#frein /*section dédié au frein vélo*/
+				{
+					display: flex;
+					flex-direction: row; /*place l'un à coté de l'autre image et bloc texte (h3 + paragraphe)*/
+					width: 85%; /*la totalité du bloc image + texte occupe 75% de la largeur de la zone de contenu*/
+					margin-bottom: 30px; /*ajout d'une marge inférieur pour bien séparé les différents équipements*/
+				}
+
+
+		#equipement_droite
+		{
+			display: flex;
+			flex-direction: column; /*place les différent équipements les uns au dessus des autres (en colonne - axe principal)*/
+			align-items: flex-end; /*aligne chaque élément sur la droite (à la fin du bloc) selon l'axe secondaire (horizontal)*/
+			margin-top: 50px;
+		}
+
+
+/*-----------------------------------EQUIPEMENT DROITE---------------------------------*/
+
+			#equipement_droite img /*s'applique à toutes les image de la section équipement_droit*/
+			{
+				border-radius: 100%; /*rend l'image carré ronde grace à un border radius maximum*/
+				border: 3px solid #0082c4; /*ajoute une bordure de 3px en bleu decathlon sur les images détails équipement*/
+				margin-left: 25px; /*ajoute espace à gauche entre l'image et le texte*/
+			}
+
+			#equipement_droite h3
+			{
+				text-align: right;
+				margin-bottom:0px;/*supprimer marge inférieur pour rapprocher titre et paragraphe*/
+			}
+
+			#equipement_droite p
+			{
+				margin-top: 10px; /*diminuer marge supérieur pour rapprocher titre et paragraphe*/
+			}
+
+					#carter /*section dédié au carter vélo*/
+					{
+						display: flex;
+						flex-direction: row; /*place l'un à coté de l'autre image et bloc texte (h3 + paragraphe)*/
+						width: 78%; /*la totalité du bloc image + texte occupe 75% de la largeur de la zone de contenu*/
+						margin-bottom: 30px; /*ajout d'une marge inférieur pour bien séparé les différents équipements*/
+					}
+
+					#selle /*section dédié à la selle vélo*/
+					{
+						display: flex;
+						flex-direction: row; /*place l'un à coté de l'autre image et bloc texte (h3 + paragraphe)*/
+						width: 78%; /*la totalité du bloc image + texte occupe 75% de la largeur de la zone de contenu*/
+						margin-bottom: 30px; /*ajout d'une marge inférieur pour bien séparé les différents équipements*/
+					}
+
+					#phare /*section dédié aux lumières et sonnette vélo*/
+					{
+						display: flex;
+						flex-direction: row; /*place l'un à coté de l'autre image et bloc texte (h3 + paragraphe)*/
+						width: 78%; /*la totalité du bloc image + texte occupe 75% de la largeur de la zone de contenu*/
+						margin-bottom: 30px; /*ajout d'une marge inférieur pour bien séparé les différents équipements*/
+					}
+
+/*-----------------------------------PHOTOS GAUCHE ET DROITE------------------------*/
+
+
+			#photo_droite img /*Photo enfant sur vélo à droite à gauche du contenu*/
+			{
+				position:absolute;
+				/*top:100px;*/
+				right: -100px;
+				border: 2px solid white;
+				width: 30%;
+				max-width: 250px;
+				border-radius: 0%;
+
+				/*légère ombre sous les photos et adaptations aux différents navigateurs*/
+				-webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.19);
+                -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.19);
+                box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.19);
+			}
+
+			#photo_gauche img /*Photo enfant sur vélo à gauche du contenu*/
+			{
+				position:absolute;
+				left: -100px;
+				border: 2px solid white;
+				width: 30%;
+        max-width: 300px;
+				border-radius: 0%;
+
+				/*légère ombre sous les photos et adaptations aux différents navigateurs*/
+				-webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.19);
+                -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.19);
+                box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.19);
+			}
+/*--------------------BLOC PHOTO CONDITIONNEL SUR AFFICHAGE MOYEN------------------*/
+		#bloc_photo
+		{
+			display: none;
+		}
+
+
+/*--------------------------------------ACCESSOIRES SECURITE ------------------------*/
+
+		#accessoires_securite
+		{
+			width: 80%;
+			width:80%;
+			margin-left:10%;
+			margin-right:10%;
+			margin-bottom: 60px;
+		}
+
+/*--------------------------------------ARTICLES CONSEILLES ------------------------*/
+
+		#titre_articles
+		{
+			width:80%;
+			margin-right: 10%;
+			margin-left: 10%;
+			text-align: left;
+		}
+
+		#articles_conseilles
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width:80%;
+			margin-right: 10%;
+			margin-left: 10%;
+		}
+
+			#casque
+			{
+				display: flex;
+				flex-direction: column;
+				height: 270px;
+				width: 190px;
+				border: 1px solid #f0f0f0;
+				margin-left:15px;
+				margin-bottom:15px;
+			}
+
+			#roues
+			{
+				display: flex;
+				flex-direction: column;
+				height: 270px;
+				width: 190px;
+				border: 1px solid #f0f0f0;
+				margin-left:15px;
+				margin-bottom:15px;
+			}
+
+
+			#panier
+			{
+				display: flex;
+				flex-direction: column;
+				height: 270px;
+				width: 190px;
+				border: 1px solid #f0f0f0;
+				margin-left:15px;
+				margin-bottom:15px;
+			}
+
+
+			#bequille
+			{
+				display: flex;
+				flex-direction: column;
+				height: 270px;
+				width: 190px;
+				border: 1px solid #f0f0f0;
+				margin-left:15px;
+				margin-bottom:15px;
+			}
+
+
+				.infos
+				{
+					display: flex;
+					flex-direction: row;
+					justify-content:space-between;
+					text-transform:uppercase;
+					align-items: flex-start;
+					color: #2b2b2b;
+					margin-top: 5px;
+				}
+
+
+					.description
+					{
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-start;
+						align-items: flex-start;
+						width:50%;
+						padding-left: 5px;
+						margin-top:0px;
+					}
+
+
+						.marque
+						{
+							font-family: 'roboto_condensedbold', "Arial Black", "Arial Bold", Arial, Verdana, sans-serif;
+							margin-bottom:0px;
+							font-size: 0.8em;
+						}
+
+						.nom_produit
+						{
+							font-family: 'roboto_condensedregular', Arial, Verdana, sans-serif;
+							font-size: 0.8em;
+							margin:0px;
+							text-align: left;
+
+						}
+
+					.prix p
+					{
+						font-family: 'roboto_condensedbold', "Arial Black", Verdana, sans-serif;
+						size: 0.8em;
+						width:20%;
+						text-align: right;
+						padding-right: 5px;
+						margin-top:15px;
+					}
+
+
+/*-----------------------------------TREMPLIN---------------------------------*/
+		#tremplin
+		{
+			width:80%;
+			margin-left:10%;
+			margin-right:10%;
+			margin-top:60px;
+		}
+
+		#tremplin p
+		{
+			margin-bottom: 60px;
+		}
+
+
+		.stab
+		{
+			width:100%;
+			margin-bottom:20px;
+		}
+
+
+		.barre
+		{
+			width: 100%;
+			margin-bottom: 50px;
+		}
+
+
+
+
+/*-------------------------RESPONSIVE-----------------------------------------*/
+
+
+
+/*--------------------Affichage en dessous de 1280px de large-------------*/
+
+
+@media all and (max-width: 1280px)
+{
+
+	#content /*Bloc blanc contenant tout le descriptif le contenu de la page hors background et header*/
+	{
+		width:90%;
+	}
+
+		header
+		{
+			width: 90%;
+		}
+
+			#nom_produit /*Encadré orange en retrait*/
+		{
+
+			position:absolute;/*nécessaire au positionnement en retrait négatif du bloc orange nom produit - le container doit être en positionnement relatif*/
+			text-align: center;
+			top: 25px;
+			left: -30px;
+			width: 100%; /*largeur bloc nom du produit*/
+			min-width: 300px;
+			/*background-color: #ea690a;*/ /*couleur de fond du bloc nom du produit - orange decathlon*/
+			background-color: rgba(234, 105, 10, 0.8) ;
+		}
+
+			#nom_produit h1 /*Nom produit dans encadré orange*/
+			{
+				font-size: 1.3em; /*Taille du nom du produit*/
+				color: #000000;
+				font-family: 'roboto_condensedbold_italic', "Arial Black", "Arial Bold", Arial,Verdana, sans-serif;
+				text-transform: uppercase; /*Mise en capitale de tout les caractères du titre H1 - Nom du produit*/
+				padding: 10px 40px 5px 40px;
+				margin: 0px;
+				color:#2b2b2b;
+				/*color:#ffffff;*/
+			}
+
+			#photo_droite img /*Photo enfant sur vélo à droite à gauche du contenu*/
+			{
+				right: -20px;
+			}
+
+			#photo_gauche img /*Photo enfant sur vélo à gauche du contenu*/
+			{
+				left: -30px;
+			}
+
+			#cadre
+			{
+				width:73%;
+			}
+
+			#frein
+			{
+				width:73%;
+			}
+
+			#carter
+			{
+				width:73%;
+			}
+
+			#selle
+			{
+				width:73%;
+			}
+
+			#phare
+			{
+				width:73%;
+			}
+
+
+}
+
+
+
+
+
+
+/*--------------------Affichage en dessous de 992px de large--------------*/
+
+
+
+@media ( max-width : 992px )
+{
+	#content /*Bloc blanc contenant tout le descriptif le contenu de la page hors background et header*/
+	{
+		width:90%;
+	}
+
+	p
+	{
+		font-size: 0.9em;
+	}
+
+	h2
+	{
+		font-size:1.5em;
+		/*text-align: center;*/
+	}
+
+	#nom_produit /*Encadré orange en retrait*/
+		{
+			width: 100%; /*largeur bloc nom du produit*/
+		}
+
+			#nom_produit h1 /*Nom produit dans encadré orange*/
+			{
+				font-size: 1.5em; /*Taille du nom du produit*/
+			}
+
+			#presentation /*Partie comprenant la photo du produit, prix, avis logo btwin et Lifetime warranty*/
+			{
+
+			margin-top: 40px;
+			}
+
+			#photo_droite img /*Photo enfant sur vélo à droite à gauche du contenu*/
+			{
+				display:none;
+			}
+
+			#photo_gauche img /*Photo enfant sur vélo à gauche du contenu*/
+			{
+				display: none; /*masquer affichage de la seconde photo au milieur de la description des équipements*/
+			}
+
+
+
+			#equipement_gauche h3
+			{
+				margin-top: 20px;
+			}
+
+			#equipement_gauche p
+			{
+				margin-top: 10px; /*diminuer marge supérieur pour rapprocher titre et paragraphe*/
+			}
+
+
+			#equipement_gauche img /*s'applique à toutes les image de la section équipement_gauche*/
+			{
+				margin-right: 20px; /*ajoute espace à droite entre l'image et le texte*/
+			}
+
+				#cadre /*section dédié au cadre vélo*/
+				{
+					width: 100%; /*occupe la totalité des 80% (#equipements) de l'espace horizontal*/
+				}
+
+
+				#frein /*section dédié au frein vélo*/
+				{
+					width: 100%; /*occupe la totalité des 80% (#equipements) de l'espace horizontal*/
+				}
+
+			#equipement_droite
+			{
+				margin-top:0px;
+			}
+
+
+			#equipement_droite img /*s'applique à toutes les image de la section équipement_droit*/
+			{
+				margin-left: 0px;
+				margin-right: 20px;
+			}
+
+			#equipement_droite h3
+			{
+				text-align: left; /*aligne titre à gauche*/
+				margin-top: 20px;
+			}
+
+				#carter /*section dédié au carter vélo*/
+				{
+					flex-direction: row-reverse;
+					width: 100%;
+				}
+
+				#selle /*section dédié à la selle vélo*/
+				{
+					flex-direction: row-reverse;
+					width: 100%;
+				}
+
+				#phare /*section dédié aux lumières et sonnette vélo*/
+				{
+					flex-direction: row-reverse;
+					width: 100%;
+				}
+
+		/*------------BLOC PHOTO CONDITIONNEL SUR AFFICHAGE MOYEN-----------*/
+
+		#bloc_photo
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-top:30px;
+			margin-bottom:30px;
+		}
+
+		#bloc_photo img
+		{
+			width: 40%;
+			height: 40%;
+
+		}
+}
+
+
+
+
+
+/*--------------------Affichage en dessous de 480px de large--------------*/
+
+@media all and (max-width: 480px)
+{
+
+	.decathlon_discovery img
+	{
+		width: 90%;
+	}
+
+	.facebook img
+	{
+		width:20%;
+	}
+
+	.instagram img
+	{
+		width:35%;
+	}
+
+	#content /*Bloc blanc contenant tout le descriptif le contenu de la page hors background et header*/
+	{
+		width:90%;
+	}
+
+	p
+	{
+		font-size: 0.8em;
+	}
+
+	h2
+	{
+		font-size:1.4em;
+		text-align: center;
+	}
+
+	h3
+	{
+		font-size:1.2em;
+	}
+
+			#nom_produit /*Encadré orange en retrait*/
+		{
+			position:static;
+			text-align: center;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+		}
+
+			#nom_produit h1 /*Nom produit dans encadré orange*/
+			{
+				font-size: 1.2em;
+				padding: 10px 40px 5px 40px;
+				margin: 0px;
+			}
+
+			#photo_produit img
+			{
+
+				margin-top: 0px;
+			}
+
+			#presentation /*Partie comprenant la photo du produit, prix, avis logo btwin et Lifetime warranty*/
+			{
+				margin-top: 20px; /*espace h1 dans bloc orange et image produit*/
+			}
+
+			#equipement_gauche h3
+			{
+				margin-top: 20px;
+			}
+
+			#equipement_gauche p
+			{
+				margin-top: 10px; /*diminuer marge supérieur pour rapprocher titre et paragraphe*/
+			}
+
+
+			#equipement_gauche img /*s'applique à toutes les image de la section équipement_gauche*/
+			{
+				margin-right: 0px; /*ajoute espace à droite entre l'image et le texte*/
+				width: 100%;
+				height: 100%;
+			}
+
+
+				#cadre /*section dédié au cadre vélo*/
+				{
+					flex-direction: column; /*place l'un au dessus de l'autre image et bloc texte (h3 + paragraphe)*/
+					width: 100%; /*occupe la totalité des 80% (#equipements) de l'espace horizontal*/
+				}
+
+
+				#frein /*section dédié au frein vélo*/
+				{
+					flex-direction: column; /*place l'un au dessus de l'autre image et bloc texte (h3 + paragraphe)*/
+					width: 100%; /*occupe la totalité des 80% (#equipements) de l'espace horizontal*/
+				}
+
+
+			/*---------------------EQUIPEMENT DROITE--------------------*/
+
+			#equipement_droite img /*s'applique à toutes les image de la section équipement_droit*/
+			{
+				width: 100%;
+				height: 100%;
+				margin-left: 0px; /*ajoute espace à droite entre l'image et le texte*/
+			}
+
+			#equipement_droite h3
+			{
+				text-align: left; /*aligne titre à gauche*/
+				margin-top: 20px;
+			}
+
+					#carter /*section dédié au carter vélo*/
+					{
+						flex-direction: column-reverse; /*place l'un au dessus de l'autre image et bloc texte (h3 + paragraphe) - inverser ordre pour image en premier*/
+						width: 100%; /*occupe la totalité des 80% (#equipements) de l'espace horizontal*/
+					}
+
+					#selle /*section dédié à la selle vélo*/
+					{
+						flex-direction: column-reverse; /*place l'un au dessus de l'autre image et bloc texte (h3 + paragraphe) - inverser ordre pour image en premier*/
+						width: 100%; /*occupe la totalité des 80% (#equipements) de l'espace horizontal*/
+					}
+
+					#phare /*section dédié aux lumières et sonnette vélo*/
+					{
+						flex-direction: column-reverse; /*place l'un au dessus de l'autre image et bloc texte (h3 + paragraphe) - inverser ordre pour image en premier*/
+						width: 100%; /*occupe la totalité des 80% (#equipements) de l'espace horizontal*/
+					}
+
+			/*------------------PHOTOS GAUCHE ET DROITE------------------------*/
+
+
+			#photo_droite img /*Photo enfant sur vélo à droite à gauche du contenu*/
+			{
+				position: static; /*supprimer positionnement absolu et remettre photo dans flux*/
+				width: 100%;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 20px;
+			}
+
+			#photo_gauche img /*Photo enfant sur vélo à gauche du contenu*/
+			{
+				display: none; /*masquer affichage de la seconde photo au milieur de la description des équipements*/
+			}
+}
